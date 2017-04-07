@@ -7,6 +7,7 @@ title: Netlify Takehome
   <div class="row">
     <div class="col-md-offset-2 col-md-8 text-center">
       <h1><%= current_page.data.title %></h1>
+      <hr>
     </div>
   </div>
   
@@ -18,8 +19,8 @@ title: Netlify Takehome
       <div class="circle text-center pull-left" style="background-color:<%= entry.color %>"><%=entry.label%></div>
       
       <div>
-        <%= markdown(entry.question) %>
-        <%= markdown(entry.answer) %>
+        <%= markdown("**Question:** "+entry.question) %>
+        <%= markdown("**Answer:** "+entry.answer) %>
       </div>
     
     <hr>
@@ -29,6 +30,7 @@ title: Netlify Takehome
 
   <div class="row">
     <div class="col-md-offset-2 col-md-8">
+      <p>Here are some links to my blogs currently hosted on Netlify.</p>
       <ul>
         <li> 
         <%= link_to(
