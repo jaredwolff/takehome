@@ -31,11 +31,18 @@ page '/*.txt', layout: false
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
 
-# helpers do
-#   def some_helper
-#     'Helping'
-#   end
-# end
+# Methods defined in the helpers block are available in templates
+
+# Nifty little helper from this gist:
+# https://gist.github.com/tiberiucorbu/67df6c13d61c0fb3a34a
+helpers do
+  # Initialize a redcarpet XHTML renderer and renders the input text
+  def markdown(text)
+    renderer = Redcarpet::Render::XHTML.new
+    markdown = Redcarpet::Markdown.new(renderer)
+    return markdown.render(text)
+  end
+end
 
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
