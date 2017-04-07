@@ -1,36 +1,36 @@
 [
   
   {
-    "question": "Rank your 5 favorite, and **least favorite**, activities from this [list](https://gist.github.com/fool/b0f254ff8c72a5765b6a9138249789d6).",
-    "answer": "Blah blah blah stuff and things",
+    "question": "Rank your 5 favorite, and least favorite, activities from this [list](https://gist.github.com/fool/b0f254ff8c72a5765b6a9138249789d6).",
+    "answer": "**Five Favorite:**\n\n1. Write and maintain documentation for our software and blog posts for our website.\n1. Respond to 60+ support requests via email or chat every day\n1. Debug a customer's build using a programming language and framework that you've never seen before\n1. Suggest and champion improvements to the product and workflow to your colleagues in and out of support\n1.Work with the development team to help design a new feature based on feedback from customers \n\n**Five Not-so-favorites:**\n\n1. Engage multiple users at once via chat to answer their questions and troubleshoot problems\n1. Create video tutorials to help teach users a specific feature or use case\n1. Receive occasional phone calls requesting support from our highest-value customers\n1. Find and recruit teammates for the support team\n1. Help manage communications during a service outage ",
     "color": "blue",
     "label": "1"
   },
-
+ 
   {
     "question": "What is your favorite thing about providing technical support?",
-    "answer": "Blah blah blah stuff and things",
+    "answer": "One of the coolest things is that you get to see problems that may otherwise not pop up in your every day life. They are new challenges that get to be solved and plus you're helping someone in the process. Once that problem is solved, documentation is written and the customer has shipped it's time to celebrate and then get back to work!",
     "color": "red",
     "label": "2"
   },
 
   {
     "question": "What did you think of our service during the time you used it?  Be honest!  “it sucked” isn’t a wrong answer unless you don’t elaborate and provide some constructive criticism ;)",
-    "answer": "Blah blah blah stuff and things",
+    "answer": "It was honestly a sigh of relief. I have been personally hosting my own static websites for the past 4 years on services like Linode and Digital Ocean. There was honestly no reason to be running them there considering all of my work has been statically built (except for a Sinatra side project and a Flask project just for giggles.)\n\nIn some cases, when I ran into errors, the documentation was sorely lacking. For instance, I had to figure out on my own how to change all my submodules to subtrees so Netlify could handle all my external plugins or themes. (I think there was an obscure reference to that issue in the documentation but no actionable information.)\n\nOverall, I'm so happy I made the jump. I no longer have to deal with the nuances of running an optimized web server and concentrate on my writing and content!",
     "color": "gold",
     "label": "3"
   },
 
   {
     "question": "Tell about how you made your site and why you chose the tools you did. Briefly explain a challenge you experienced in setting up this site and how you solved it.",
-    "answer": "Blah blah blah stuff and things",
+    "answer": "I decided to go with [Middleman](http://middlemanapp.com/) because of a few reasons.\n\n1. I wanted to see what the hubub was about.\n1. I wanted to try something other than Hugo and Jekyll of which i'm comfortable with.\n1. I wanted a challenge! And speaking of.. there were a few bumps in the road:\n\n\tThe first bump happened when I first tried to upload the site to Netlify. Turns out y'all aren't using the same version of Ruby I am. So, when I finally pushed the build promptly died because a dependency was not compatible with the older version of Ruby being run. I took a minute to look up the documentation and added my `.ruby-version` file to my app route and all is well.\n\n\tAnother finicky thing is that JSON files don't support new lines. Every time I wanted to create a new line/new paragraph I need to actually type out the escaped character: `\\n` A mild inconvenience but there's always going to be imperfections in what ever you engineer. That's what makes us human!",
     "color": "grey",
     "label": "4"
   },
 
   {
     "question": "Could you give us a suggestion to improve this test or the job posting?",
-    "answer": "Blah blah blah stuff and things",
+    "answer": "Definitely put some creative constraints on the project. I think folks could get carried away quite fast. I almost did and had to reel things in for my sanity sake. Also, I didn't even know about the job posting until I went to the website. It may be a good idea to announce you're hiring on the JAMStack podcast, etc. I guess it depends on how wide of a net you guys want to cast. Sometimes you let the fish come to you.. ;)",
     "color": "silver",
     "label": "5"
   },
@@ -44,7 +44,7 @@
 
   {
     "question": "Why do you think SSL/HTTPS is important?",
-    "answer": "Blah blah blah stuff and things",
+    "answer": "I honestly didn't think it was important up until recently. 'Why should I add all this extra work to serve the same website!' I would think. I guess my trust in every single path my traffic and other's traffic takes, when using normal HTTP, was too high. These paths across the internet are vulnerable to man-in-the-middle attacks where bits of malicious javascript could be embedded right in the websites that folks are trying to visit. SSL/HTTPs obscures what you're sending so it's quite unlikely that someone could pull off that same attack without finding vulnerabilities with SSL/HTTPs first. I now run SSL certs on all my sites because it's the right way to protect your visitors whether or not they realize it. It will take time to get everyone converted over but when it's as easy as clicking a button, why not?",
     "color": "orange",
     "label": "7"
   },
