@@ -65,7 +65,7 @@
 
   {
     "question": "(optional/bonus) Can you set up a redirect from \“/netlify/anything\” to https://www.google.com/search?q=anything ?",
-    "answer": "Blah blah blah stuff and things",
+    "answer": "Yea! This is pretty neat. By adding a `_redirects` to a project root, you can define what happens even at a non-existent route. I believe the line in the redirect file should look something like this: \n\n\t\t/netlify/*  https://www.google.com/search?q=:splat",
     "color": "skyblue",
     "label": "10"
   }
