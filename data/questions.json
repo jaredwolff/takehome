@@ -37,7 +37,7 @@
 
   {
     "question": "Provide a link to documentation for a technical/developer-focused product, that you think are well done, and briefly explain why you think they are well done.",
-    "answer": "Blah blah blah stuff and things",
+    "answer": "When implementing a very basic [Flask](http://flask.pocoo.org/docs/0.12/) site, I barely #1 had to visit the documentation and #2 when I had to the documentation it was so vast that it blew my mind a bit. There was so much information about their microframework that hit every nook and cranny that I needed for the small site I was running. I can't say for sure it would solve all my problems but I'm quite impressed. I compare it to the early Jekyll days where documentation was sorely lacking and you found answers in Github issues or on people's personal websites. Building out good documentation is hard because you're never going to fully grasp every use case for your platform or framework. That's where interfacing with your customers and users is important. That's where you get the information about what their pain points using your system are and that way you can alleviate their pain by creating documentation or finding ways to bypass those issues all together.",
     "color": "mediumseagreen",
     "label": "6"
   },
